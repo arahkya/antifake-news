@@ -1,0 +1,10 @@
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+    "TitleEn": "Eiusmod aliquip consectetur eu eiusmod magna exercitation minim deserunt aute nulla consectetur proident ipsum duis.",
+    "TitleTh": "Quis incididunt magna anim reprehenderit culpa laboris minim sit commodo labore excepteur ea.",
+    "Detail": "Qui fugiat mollit dolore eu proident nulla dolor quis irure. Proident sint consectetur non proident elit. Anim eiusmod proident adipisicing velit. Reprehenderit minim in voluptate id aute eu nostrud incididunt aliquip sint mollit nostrud amet ipsum. Officia magna cupidatat anim ad culpa qui. Ad veniam ea irure ea et amet deserunt dolore et consectetur excepteur incididunt. Excepteur incididunt minim incididunt consectetur adipisicing magna sint laboris. Elit fugiat irure cillum aliqua aute reprehenderit.",
+    "Author": "Arahk Yambupah",
+    "Organize": "BBL"
+}
