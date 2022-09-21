@@ -41,7 +41,7 @@ func ListContent() []models.ContentModel {
 	}
 	defer db.Close()
 
-	statement, statementErr := db.Prepare(`select TitleEn, TitleTh, Detail, Author, Organize from Contents`)
+	statement, statementErr := db.Prepare(`select Id, TitleEn, TitleTh, Detail, Author, Organize from Contents`)
 	if statementErr != nil {
 		panic(statementErr.Error())
 	}
@@ -56,7 +56,7 @@ func ListContent() []models.ContentModel {
 	for rows.Next() {
 		var content models.ContentModel
 
-		if scanError := rows.Scan(&content.TitleEn, &content.TitleTh, &content.Detail, &content.Author, &content.Organize); scanError != nil {
+		if scanError := rows.Scan(&content.Id, &content.TitleEn, &content.TitleTh, &content.Detail, &content.Author, &content.Organize); scanError != nil {
 			panic(scanError.Error())
 		}
 
