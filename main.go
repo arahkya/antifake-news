@@ -8,7 +8,7 @@ import (
 func main() {
 	app := fiber.New()
 
-	app.Get("/", handlers.HelloWorld)
+	app.Get("/", handlers.ListContent)
 	app.Post("/", handlers.PostContent)
 
 	app.Listen((":3000"))
