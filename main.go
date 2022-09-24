@@ -9,7 +9,10 @@ func main() {
 	app := fiber.New()
 
 	app.Get("/", handlers.ListContent)
+	app.Get("/{id}", handlers.GetContent)
+	app.Delete("/{id}", handlers.DeleteContent)
 	app.Post("/", handlers.PostContent)
+	app.Patch("/", handlers.PatchContent)
 
 	app.Listen((":3000"))
 }
