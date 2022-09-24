@@ -1,4 +1,4 @@
-package data
+package mysql
 
 import (
 	"database/sql"
@@ -8,7 +8,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var connectionString = "root:vkiydKN123456@tcp(127.0.0.1:3306)/AntifakeNews"
+var connectionString = "root:vkiydKN123456@tcp(antifake-news-db:3306)/AntifakeNews"
 
 func CreateContent(content *models.ContentModel) {
 	db, err := sql.Open("mysql", connectionString)

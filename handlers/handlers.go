@@ -3,7 +3,7 @@ package handlers
 import (
 	"encoding/json"
 
-	data "github.com/arahkya/antifake-news/Data"
+	data "github.com/arahkya/antifake-news/Data/sqlite"
 	"github.com/arahkya/antifake-news/models"
 	"github.com/gofiber/fiber/v2"
 )
